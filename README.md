@@ -16,8 +16,8 @@
 ## tweetテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|string|null: false|
-|image|string|null: false|
+|text|string|
+|image|string|
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
