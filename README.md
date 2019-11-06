@@ -35,7 +35,7 @@
 
 ### Association
 - has_many :tweets
-- belongs_to :user
+- has_many :users
 
 
 
