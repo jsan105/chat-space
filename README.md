@@ -9,7 +9,7 @@
 
 ### Association
 - has_many :tweets
-- belongs_to :group
+- has_many :groups
 
 
 
