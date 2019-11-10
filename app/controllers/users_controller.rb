@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
   def edit
   end
 
