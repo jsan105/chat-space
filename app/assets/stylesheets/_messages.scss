@@ -5,15 +5,16 @@
   padding: 0;
   overflow: hidden;
 
-  .chat-side{
+  .side-bar{
     width: 300px;
     height: calc(100vh);
     color: white;
     
-    .side-header{
+    .header{
       background-color: #253141;
       height: 100px;
       display: flex;
+      justify-content: space-between;
       align-items: center;
       padding: 0 20px;
       &__box{
@@ -21,9 +22,8 @@
         justify-content: space-between;
         width: 100%;
         font-weight: bold;
-        &_user-name{
+        &__name{
           display: flex;
-          justify-content: space-between;
           width: 100%;
           font-weight: bold;
         } 
