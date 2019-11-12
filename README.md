@@ -14,7 +14,7 @@
 
 
 
-## tweetテーブル
+## messageテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|string|

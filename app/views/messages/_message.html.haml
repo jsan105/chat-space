@@ -1,0 +1,34 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__current-group
+        = @group.name
+      .main-header__left-box__lists
+        .main-header__left-box__lists__menber-list
+          Member :
+        - @group.users.each do |user|
+          .main-header__left-box__lists__menbers
+            = user.name
+    .main-header__edit-btn
+      =link_to edit_group_path(@group) do
+        Edit
+
+
+  .messages
+    .message
+      .message__upper-info
+        .message__upper-info__talker
+          チャットした人
+        .message__upper-info__date
+          日時
+      .message__text
+        テキスト
+
+         
+  .form
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      = f.label :image, class: 'form__image' do
+        = icon('fas', 'image', class: 'icon')
+        = f.file_field :image, class: 'file'
+      = f.submit 'Send', class: 'form__submit'
