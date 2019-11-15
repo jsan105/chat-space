@@ -1,4 +1,4 @@
-.chat-main
+.main_chat
   .main-header
     .main-header__left-box
       .main-header__left-box__current-group
@@ -13,17 +13,8 @@
       =link_to edit_group_path(@group) do
         Edit
 
-
   .messages
-    .message
-      .message__upper-info
-        .message__upper-info__talker
-          チャットした人
-        .message__upper-info__date
-          日時
-      .message__text
-        テキスト
-
+    = render partial: "shared/message" , collection:  @messages
 
   .form
     = form_for [@group, @message] do |f|
