@@ -45,10 +45,12 @@
       overflow: scroll;
       .group{
         margin-bottom: 40px;
+        text-decoration: none;
         &__group-name{
           font-size: 15px;
           margin-bottom: 5px;
           color: white;
+          
         }
         &__latest-message{
           font-size: 11px;
