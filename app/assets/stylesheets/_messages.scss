@@ -28,12 +28,17 @@
         } 
         &__menu{
           display: flex;
-          a:visited { color:white;}
           &__new-group{
             margin-left: 0.3rem;
+            a{
+              color: white;
+            }
           }
           &__edit-user{
             margin-left: 0.3rem;
+            a{
+              color: white;
+            }
           }
         }
       }
