@@ -12,13 +12,15 @@
     .main-header__edit-btn
       =link_to edit_group_path(@group) do
         Edit
+        
   .messages
     = render partial: "shared/message" , collection:  @messages
 
   .form
-    = form_for [@group, @message] do |f|
-      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-      = f.label :image, class: 'form__image' do
-        = icon('fas', 'image', class: 'icon')
-        = f.file_field :image, class: 'file'
-      = f.submit 'Send', class: 'form__submit'
+    .new_message
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+        = f.label :image, class: 'form__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'file'
+        = f.submit 'Send', class: 'form__submit'

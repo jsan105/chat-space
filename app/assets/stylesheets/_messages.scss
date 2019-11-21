@@ -45,6 +45,9 @@
       overflow: scroll;
       .group{
         margin-bottom: 40px;
+        a{
+          text-decoration: none;
+        }
         &__group-name{
           font-size: 15px;
           margin-bottom: 5px;
@@ -95,6 +98,9 @@
         position: absolute;
         right: 40px;
         a:visited { color: #38aef0;}
+        a{
+          text-decoration: none;
+        }
       }
     }
     .messages{
